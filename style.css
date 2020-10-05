@@ -1,8 +1,8 @@
 :root {
   --red: rgb(213, 55, 31);
   --yellow: rgb(220, 171, 7);
-  --grey: rgb(132, 132, 132);
-  --dark: rgb(78, 78, 78);
+  --spanColor: rgb(132, 132, 132);
+  --textColor: rgb(78, 78, 78);
 }
 
 * {
@@ -15,6 +15,8 @@ body {
   font-family: "Roboto", sans-serif;
 }
 
+/* HERO PAGE */
+
 .hero-page {
   display: flex;
   flex-direction: column;
@@ -22,7 +24,7 @@ body {
   text-transform: capitalize;
   font-style: italic;
   font-weight: 100;
-  font-size: 1em;
+  font-size: 0.8em;
 }
 
 .hero-page_solid-white {
@@ -52,5 +54,41 @@ body {
 .hero-page_crown-yellow {
   position: absolute;
   z-index: 2;
-  transform: translate(300%, 30%) scale(1.10);
+  transform: translate(262%, 30%) scale(0.98);
 }
+
+
+/* PERSONAL PAGE */
+
+.personal-page {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  width: 100%;
+  height: auto;
+  align-items: center;
+  margin-top: 31%;
+}
+
+.personal-page_ink {
+  position: absolute;
+  z-index: -1;
+  width: 100%;
+  height: auto;
+}
+
+.personal-page_content {
+  z-index: 1;
+  max-width: 300px;
+  font-family: "Roboto", sans-serif;
+  font-size: 1.2em;
+  font-weight: 700;
+  font-style: bold;
+  color: var(--textColor);
+}
+
+.personal-page_content span {
+  color: var(--spanColor);
+}
+
+
