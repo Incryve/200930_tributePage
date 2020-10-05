@@ -1,0 +1,56 @@
+:root {
+  --red: rgb(213, 55, 31);
+  --yellow: rgb(220, 171, 7);
+  --grey: rgb(132, 132, 132);
+  --dark: rgb(78, 78, 78);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+.hero-page {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  text-transform: capitalize;
+  font-style: italic;
+  font-weight: 100;
+  font-size: 1em;
+}
+
+.hero-page_solid-white {
+  position: absolute;
+  z-index: 1;
+  width: 100%;
+  height: auto;
+}
+
+.hero-page_img {
+  width: 100%;
+  height: auto;
+  margin-bottom: 20px;
+}
+
+.hero-page_subtitle {
+  width: 100%;
+  text-align: center;
+  margin-top: 10px;
+}
+
+.hero-page_hr {
+  border-top: 1px solid;
+  max-width: 320px;
+}
+
+.hero-page_crown-yellow {
+  position: absolute;
+  z-index: 2;
+  transform: translate(300%, 30%) scale(1.10);
+}
