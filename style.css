@@ -402,4 +402,58 @@ section {
 .boxing-page span {
   font-style: italic;
   font-weight: 100;
+  padding-top: 2%;
 }
+
+/* WARHOL PAGE */
+
+.warhol-page {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.warhol-content {
+  position: relative;
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-style: bold;
+  text-align: left;
+}
+
+.warhol-content_text {
+  padding: 5%;
+  margin: 5%;
+}
+
+.warhol-content span {
+  color: var(--spanColor);
+}
+
+.warhol-content_images {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.warhol-content_images img {
+  width: auto;
+  height: 100%;
+  padding: 5%;
+  margin: 5%;
+  border: 1px solid white;
+}
+
+
+
+/* SAMO PAGE */
+
+.samo-page {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
