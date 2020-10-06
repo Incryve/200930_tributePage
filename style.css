@@ -37,7 +37,6 @@ body {
 .hero-page_img {
   width: 100%;
   height: auto;
-  margin-bottom: 20px;
 }
 
 .hero-page_subtitle {
@@ -54,7 +53,7 @@ body {
 .hero-page_crown-yellow {
   position: absolute;
   z-index: 2;
-  transform: translate(262%, 30%) scale(0.98);
+  transform: translate(10%, 31%) scale(0.99);
 }
 
 
@@ -137,7 +136,18 @@ body {
   margin-right: 10px;
 }
 
+.trivia-section_bottom img {
+  position: absolute;
+  right: -20%;
+}
+
 .trivia-section_top p { 
   margin-left: 10px;
+}
+
+
+.trivia-section_top img {
+  position: absolute;
+  left: -20%;
 }
 
