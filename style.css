@@ -246,7 +246,7 @@ section {
   display: flex;
   flex-direction: column;
   align-items: center;
-  min-height: 750px;
+  min-height: 800px;
 }
 
 .crown-content {
@@ -273,8 +273,7 @@ section {
 }
 
 .crown-content_top p {
-  margin-left: 10%;
-  margin-right: 10%;
+  margin: 2% 10% 0 10%;
 }
 
 .crown-content_bottom {
