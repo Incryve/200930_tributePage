@@ -268,7 +268,7 @@ section {
   height: 400px;
   right: -50%;
   top: 54%;
-}  
+}
 
 .crown-content_top {
   font-size: 0.9em;
@@ -281,12 +281,12 @@ section {
 }
 
 .crown-content_bottom {
-  font-size: 1.5em;
+  font-size: 1.1em;
   color: white;
 }
 
 .crown-content_bottom p {
-  margin-top: 32%;
+  margin: 40% 10% 5% 10%;
 }
 
 @media only screen and (min-width: 768px) {
@@ -296,7 +296,7 @@ section {
     display: flex;
     justify-content: space-between;
     text-align: left;
-  } 
+  }
   .crown-content_top p {
     margin: 5% 10% 0 5%;
   }
@@ -374,36 +374,66 @@ section {
   display: flex;
   flex-direction: column;
   align-items: center;
-  align-content: flex-end;
+  /* align-content: flex-end; */
   min-height: 500px;
 }
 
 .boxing-page img {
-  position: absolute;
+  position: relative;
   z-index: -2;
-  left: -110px;
+  /*left: -80px;*/
   width: auto;
-  max-height: 100%;
+  max-height: 120vh;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
-.boxing-page p {
+.boxing-content blockquote {
   position: absolute;
   font-family: "Roboto", sans-serif;
-  font-weight: 500;
   font-style: bold;
   text-align: right;
   padding: 20%;
   right: 22px;
-  top: 60%;
+  top: 65%;
   color: white;
-  filter: drop-shadow(3rem 0 0 rbga(78, 78, 78, 1));
+  filter: drop-shadow(2px 2px 2px #4E4E4E);
 }
 
-.boxing-page span {
+.boxing-content blockquote p {
+  font-weight: 500;
+}
+
+.boxing-content blockquote span {
   font-style: italic;
-  font-weight: 100;
+  font-weight: 300;
   padding-top: 2%;
 }
+
+@media only screen and (min-width: 768px) {
+  .boxing-content blockquote {
+    max-width: 470px;
+    right: 26%;
+    font-weight: 500;
+  }
+  .boxing-content blockquote span {
+    font-weight: 300;
+  }
+}
+
+@media (min-width: 1024px) and (max-width: 1440px) {
+  .boxing-content blockquote {
+    max-width: 480px;
+    top: 68%;
+    right: 31%;
+    padding: 10%;
+    font-weight: 700;
+  }
+  .boxing-content blockquote span {
+    font-weight: 300;
+  }
+}
+
 
 /* WARHOL PAGE */
 
@@ -436,16 +466,28 @@ section {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
+  margin-top: -50%;
 }
 
 .warhol-content_images img {
   width: auto;
   height: 100%;
-  padding: 5%;
-  margin: 5%;
-  border: 1px solid white;
+  border: 5px solid white;
 }
 
+@media (min-width: 768px) and (max-width: 1440px) {
+  .warhol-content_images {
+    flex-direction: row;
+  }
+  .warhol-content {
+    font-size: 2em;
+  }
+  .warhol-content_text {
+    padding: 0%;
+    margin: 3% 17% 3% 17%;
+  }
+}
 
 
 /* SAMO PAGE */
@@ -455,6 +497,7 @@ section {
   display: flex;
   flex-direction: column;
   align-items: center;
+  min-height: 500px;
 }
 
 .samo-content {
@@ -482,4 +525,124 @@ section {
   display: flex;
   flex-direction: row;
 }
+
+@media (min-width: 768px) and (max-width: 1440px) {
+  .samo-content_gif {
+    flex-direction: column;
+    width: auto;
+    height: 500px;
+    justify-content: normal;
+    align-items: flex-start;
+    float: left;
+  }
+  .samo-content_text {
+    padding: 5%;
+    margin: 1% 10% 1% 40%;
+    font-size: 1.5em;
+  }
+}
+
+
+/* SAMO PAGE - BOTTOM */
+
+
+.samo-page_bottom {
+  font-weight: 900;
+  font-size: 1.5em;
+  width: auto;
+  height: 700px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.samo-page_bottom p {
+  max-width: 230px;
+  margin-left: 30%;
+  margin-top: -103%;
+  color: white;
+}
+
+.samo-bottom_red {
+  position: absolute;
+  z-index: -2;
+  width: auto;
+  height: 700px;
+  right: -20%;
+}
+
+
+
+/* DEMISE PAGE */
+
+.demise-page {
+  font-weight: 300;
+  font-size: 1.1em;
+  font-style: italic;
+  color: var(--spanColor);
+  width: auto;
+  height: 300px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--textColor);
+}
+
+.demise-content {
+  padding: 10%;
+  text-align: center;
+  font-weight: 300;
+  filter: drop-shadow(1.5px 2px 2px black);
+}
+
+
+.demise-phrase {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: auto;
+  height: 500px;
+  text-align: right;
+  color: white;
+}
+
+.demise-phrase_img {
+  position: absolute;
+  z-index: -1;
+  width: auto;
+  height: 426px;
+  right: -55%;
+}
+
+.demise-phrase h3 {
+  font-size: 2em;
+  font-weight: 900;
+  color: white;
+  position: relative;
+}
+
+.demise-phrase blockquote {
+  padding: 5%;
+  margin-right: 5%
+}
+
+
+
+/* FOOTER */
+
+.footer {
+  font-weight: 100;
+  font-style: italic;
+  text-align: center;
+  font-size: 0.5rem;
+  margin-bottom: 5px;
+}
+
+
 
