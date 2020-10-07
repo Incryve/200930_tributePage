@@ -632,7 +632,7 @@ video {
   justify-content: center;
   align-items: center;
   width: auto;
-  height: 500px;
+  height: 100vh;
   text-align: right;
   color: white;
 }
@@ -641,8 +641,8 @@ video {
   position: absolute;
   z-index: -1;
   width: auto;
-  height: 426px;
-  right: -55%;
+  height: 50%;
+  right: -30%;
 }
 
 .demise-phrase h3 {
