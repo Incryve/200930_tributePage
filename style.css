@@ -103,6 +103,12 @@ section {
   }
 }
 
+@media only screen and (min-width: 2560px) {
+  .hero-page_crown-yellow {
+    transform: translate(647%, 152%) scale(2.1);
+  }
+}
+
 
 /* PERSONAL PAGE */
 
@@ -223,7 +229,7 @@ section {
   }
 }
 
-@media only screen and (min-width: 1024px) {
+@media only screen and (min-width: 1024px)  {
   .left {
     margin-left: 20%;
   }
@@ -234,6 +240,36 @@ section {
     margin-left: 8rem;
     margin-right: 8rem;
     font-size: 1.1em;
+  }
+  .trivia-content p {
+    padding: 1.5rem;
+  }
+}
+
+@media (min-width: 1080px) and (max-width: 1152px) {
+  .left {
+    margin-left: 25%;
+  }
+  .right {
+    margin-right: 25%;
+  }
+  .trivia-content {
+    font-size: 1.2em;
+  }
+}
+
+
+@media (min-width: 1280px) and (min-width: 1440px) {
+  .left {
+    margin-left:20%;
+  }
+  .right {
+    margin-right: 20%;
+  }
+  .trivia-content {
+    margin-left: 20rem;
+    margin-right: 20rem;
+    font-size: 1.2em;
   }
   .trivia-content p {
     padding: 1.5rem;
@@ -375,7 +411,8 @@ section {
   flex-direction: column;
   align-items: center;
   /* align-content: flex-end; */
-  min-height: 500px;
+  width: auto;
+  min-height: 100vh;
 }
 
 .boxing-page img {
@@ -383,7 +420,7 @@ section {
   z-index: -2;
   /*left: -80px;*/
   width: auto;
-  max-height: 120vh;
+  max-height: 100%;
   margin-top: 0;
   margin-bottom: 0;
 }
@@ -393,7 +430,7 @@ section {
   font-family: "Roboto", sans-serif;
   font-style: bold;
   text-align: right;
-  padding: 20%;
+  margin: 30% 10%;
   right: 22px;
   top: 65%;
   color: white;
@@ -412,27 +449,15 @@ section {
 
 @media only screen and (min-width: 768px) {
   .boxing-content blockquote {
-    max-width: 470px;
-    right: 26%;
+    max-width: 329px;
     font-weight: 500;
+    margin: 18% 28%;
   }
   .boxing-content blockquote span {
     font-weight: 300;
   }
 }
 
-@media (min-width: 1024px) and (max-width: 1440px) {
-  .boxing-content blockquote {
-    max-width: 480px;
-    top: 68%;
-    right: 31%;
-    padding: 10%;
-    font-weight: 700;
-  }
-  .boxing-content blockquote span {
-    font-weight: 300;
-  }
-}
 
 
 /* WARHOL PAGE */
@@ -476,9 +501,10 @@ section {
   border: 5px solid white;
 }
 
-@media (min-width: 768px) and (max-width: 1440px) {
+@media (min-width: 768px) and (min-width: 1440px) {
   .warhol-content_images {
     flex-direction: row;
+    margin-top: 0;
   }
   .warhol-content {
     font-size: 2em;
@@ -490,6 +516,7 @@ section {
 }
 
 
+
 /* SAMO PAGE */
 
 .samo-page {
@@ -497,7 +524,8 @@ section {
   display: flex;
   flex-direction: column;
   align-items: center;
-  min-height: 500px;
+  width: auto;
+  height: 100vh;
 }
 
 .samo-content {
@@ -524,6 +552,8 @@ section {
 .samo-content_gif {
   display: flex;
   flex-direction: row;
+  width: auto;
+  height: 100%;
 }
 
 @media (min-width: 768px) and (max-width: 1440px) {
@@ -613,7 +643,7 @@ section {
   max-width: 85%;
 }
 
-video {
+.demise-page video {
   position: absolute;
   width: auto;
   height: 100vh;
