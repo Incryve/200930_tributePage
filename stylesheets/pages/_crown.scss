@@ -1,0 +1,123 @@
+// CROWN PAGE 
+
+
+.crown-page {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 800px;
+}
+
+.crown-content {
+  position: relative;
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-style: bold;
+  text-align: center;
+}
+
+.crown-content_banner {
+  position: absolute;
+  z-index: -2;
+  width: auto;
+  height: 400px;
+  right: -50%;
+  top: 54%;
+}
+
+.crown-content_top {
+  font-size: 0.9em;
+  color: var(--textColor);
+  padding: 0.5rem;
+}
+
+.crown-content_top p {
+  margin: 2% 10% 0 10%;
+}
+
+.crown-content_bottom {
+  font-size: 1.1em;
+  color: white;
+}
+
+.crown-content_bottom p {
+  margin: 40% 10% 5% 10%;
+}
+
+@media only screen and (min-width: 768px) {
+  .crown-content_top {
+    font-size: 1.5em;
+    color: var(--textColor);
+    display: flex;
+    justify-content: space-between;
+    text-align: left;
+  }
+  .crown-content_top p {
+    margin: 5% 10% 0 5%;
+  }
+  .crown-content_crown {
+    margin-left: 15%;
+  }
+  .crown-content_banner {
+    position: absolute;
+    z-index: -2;
+    width: auto;
+    height: 400px;
+    right: -10%;
+    top: 45%;
+  }
+  .crown-content_bottom p {
+    margin-top: 10%;
+    padding: 10%;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .crown-content_top {
+    font-size: 2em;
+  }
+  .crown-content_banner {
+    position: absolute;
+    z-index: -2;
+    width: auto;
+    height: 500px;
+    right: -4%;
+    top: 40%;
+  }
+  .crown-content_bottom p {
+    margin-top: 10%;
+    padding: 10%;
+  }
+  .crown-content_bottom {
+    font-size: 2em;
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  .crown-content_top {
+    font-size: 2.7em;
+  }
+  .crown-content_crown {
+    transform: scale(1.5);
+    margin-left: 30%;
+  }
+  .crown-content_top p {
+    margin: 5% 15% 0 8%;
+  }
+  .crown-content_banner {
+    position: absolute;
+    z-index: -2;
+    width: auto;
+    height: 700px;
+    right: -4%;
+    top: 40%;
+  }
+  .crown-content_bottom p {
+    margin-top: 1%;
+    padding: 15%;
+  }
+  .crown-content_bottom {
+    font-size: 2.5em;
+  }
+}

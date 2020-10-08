@@ -1,0 +1,38 @@
+// ----- COLORS -----
+
+// Banners red, Span red
+/// @type Color
+$red: rgb(213, 55, 31);
+
+// Banners yellow
+/// @type Color
+$yellow: rgb(220, 171, 7);
+
+// Span color light gray
+/// @type Color
+$spanColor: rgb(132, 132, 132);
+
+// Text color dark gray 
+/// @type Color
+$textColor: rgb(78, 78, 78);
+
+
+// ----- WEIGHTS -----
+
+$hairline-weight: 100;
+$thin-weight:     200;
+$light-weight:    300;
+$normal-weight:   400;
+$medium-weight:   500;
+$semibold-weight: 600;
+$bold-weight:     700;
+$xbold-weight:    800;
+$black-weight:    900;
+
+
+// ----- FONTS -----
+
+/// @type List
+$text-font: 'Roboto', sans-serif;
+
+

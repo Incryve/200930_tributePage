@@ -1,0 +1,54 @@
+/* SAMO PAGE */
+
+.samo-page {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: auto;
+  height: 100vh;
+}
+
+.samo-content {
+  position: relative;
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-style: bold;
+  text-align: left;
+}
+
+.samo-content_text {
+  padding: 3%;
+  margin: 2% 30% 1% 30%;
+}
+
+.samo-content span {
+  color: var(--spanColor);
+}
+
+.samo-content em {
+  color: var(--red);
+}
+
+.samo-content_gif {
+  display: flex;
+  flex-direction: row;
+  width: auto;
+  height: 100%;
+}
+
+@media (min-width: 768px) and (max-width: 1440px) {
+  .samo-content_gif {
+    flex-direction: column;
+    width: auto;
+    height: 500px;
+    justify-content: normal;
+    align-items: flex-start;
+    float: left;
+  }
+  .samo-content_text {
+    padding: 5%;
+    margin: 1% 10% 1% 40%;
+    font-size: 1.5em;
+  }
+}
