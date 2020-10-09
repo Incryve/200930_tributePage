@@ -6,46 +6,49 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  min-height: 800px;
-}
-
-.trivia-page_ink {
-  position: absolute;
-  z-index: -1;
-  filter: opacity(0.1);
   width: auto;
-  height: 700px;
-}
+  height: 100vh;
 
-.trivia-content {
-  /*max-width: 300px;*/
-  font-family: "Roboto", sans-serif;
-  font-size: 0.8em;
-  font-weight: 700;
-  font-style: bold;
-  color: var(--textColor);
-  display: flex;
-  flex-direction: column;
-  position: relative;
-}
+  &_ink {
+    position: absolute;
+    z-index: -1;
+    filter: opacity(0.1);
+    width: auto;
+    height: 100vh;
+  }
 
-.trivia-content span {
-  color: var(--spanColor);
-}
+  &_content {
+    width: 320px;
+    height: 100vh;
+    font-family: $textFont;
+    font-size: 0.8em;
+    font-weight: $bold-weight;
+    color: $textColor;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+  }
 
-.trivia-content p {
-  padding: 0.8rem;
-}
+  &_content span {
+    color: $spanColor;
+  }
 
-.trivia-content_top {
-  display: flex;
-  flex-direction: row;
-}
+  &_content p {
+    padding: 0.8rem;
+  }
 
-.trivia-content_bottom {
-  display: flex;
-  flex-direction: row;
-  text-align: right;
+  &_content-top {
+    display: flex;
+    flex-direction: row;
+  }
+
+  &_content-bottom {
+    display: flex;
+    flex-direction: row;
+    text-align: right;
+  }
+
+
 }
 
 .left {
@@ -54,69 +57,5 @@
 
 .right {
   margin-right: -15%;
-}
-
-@media only screen and (min-width: 768px) {
-  .left {
-    margin-left: 15%;
-  }
-  .right {
-    margin-right: 15%;
-  }
-  .trivia-content {
-    margin-left: 6.5rem;
-    margin-right: 6.5rem;
-    font-size: 1em;
-  }
-  .trivia-content p {
-    padding: 1rem;
-  }
-}
-
-@media only screen and (min-width: 1024px)  {
-  .left {
-    margin-left: 20%;
-  }
-  .right {
-    margin-right: 20%;
-  }
-  .trivia-content {
-    margin-left: 8rem;
-    margin-right: 8rem;
-    font-size: 1.1em;
-  }
-  .trivia-content p {
-    padding: 1.5rem;
-  }
-}
-
-@media (min-width: 1080px) and (max-width: 1152px) {
-  .left {
-    margin-left: 25%;
-  }
-  .right {
-    margin-right: 25%;
-  }
-  .trivia-content {
-    font-size: 1.2em;
-  }
-}
-
-
-@media (min-width: 1280px) and (min-width: 1440px) {
-  .left {
-    margin-left:20%;
-  }
-  .right {
-    margin-right: 20%;
-  }
-  .trivia-content {
-    margin-left: 20rem;
-    margin-right: 20rem;
-    font-size: 1.2em;
-  }
-  .trivia-content p {
-    padding: 1.5rem;
-  }
 }
 
