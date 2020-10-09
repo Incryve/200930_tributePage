@@ -26,19 +26,17 @@
     font-style: bold;
     color: $textColor;
   }
-}
 
+  &_content p {
+    padding: 5%;
+  }
 
-.personal-page
+  &_content span {
+    color: $spanColor;
+  }
 
-.personal-page_content p {
-  padding: 5%;
-}
+  &_img {
+    max-width: 300px;
+  }
 
-.personal-page_content span {
-  color: $spanColor;
-}
-
-.personal-page_img {
-  max-width: 300px;
 }
