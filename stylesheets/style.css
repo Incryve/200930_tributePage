@@ -52,12 +52,64 @@ section {
   .hero-page_crown-yellow {
     position: absolute;
     z-index: 2;
-    transform: scale(1);
-    left: calc(50% - 109.2px);
-    top: 20px; }
+    transform: scale(1.25);
+    left: calc(50% - 132.2px);
+    top: 25px; }
+    @media only screen and (min-width: 375px) {
+      .hero-page_crown-yellow {
+        transform: scale(1.5);
+        left: calc(50% - 137.7px);
+        top: 38px; } }
+    @media only screen and (min-width: 410px) {
+      .hero-page_crown-yellow {
+        transform: scale(1.68);
+        left: calc(50% - 145px);
+        top: 50px; } }
     @media only screen and (min-width: 540px) {
       .hero-page_crown-yellow {
-        top: 0; } }
+        transform: scale(0.6);
+        left: calc(50% - 95.2px);
+        top: -19px; } }
+    @media only screen and (min-width: 640px) {
+      .hero-page_crown-yellow {
+        transform: scale(0.73);
+        left: calc(50% - 95.2px);
+        top: -11.5px; } }
+    @media only screen and (min-width: 700px) {
+      .hero-page_crown-yellow {
+        transform: scale(0.83);
+        left: calc(50% - 99px);
+        top: -3.6px; } }
+    @media only screen and (min-width: 810px) {
+      .hero-page_crown-yellow {
+        transform: scale(0.9);
+        left: calc(50% - 99px);
+        top: 0px; } }
+    @media only screen and (min-width: 1024px) {
+      .hero-page_crown-yellow {
+        transform: scale(1.14);
+        left: calc(50% - 103.1px);
+        top: 14px; } }
+    @media only screen and (min-width: 1280px) {
+      .hero-page_crown-yellow {
+        transform: scale(1.4);
+        left: calc(50% - 109px);
+        top: 34px; } }
+    @media only screen and (min-width: 1300px) {
+      .hero-page_crown-yellow {
+        transform: scale(1.5);
+        left: calc(50% - 111px);
+        top: 40px; } }
+    @media only screen and (min-width: 1400px) {
+      .hero-page_crown-yellow {
+        transform: scale(1.55);
+        left: calc(50% - 110px);
+        top: 47px; } }
+    @media only screen and (min-width: 2000px) {
+      .hero-page_crown-yellow {
+        transform: scale(2.8);
+        left: calc(50% - 133px);
+        top: 127px; } }
 
 .dsk {
   display: none; }
