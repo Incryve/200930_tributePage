@@ -16,6 +16,7 @@
     position: relative;
   }
 
+  // ----- SVG BASQUIAT WHITE
   &_solid-white {
     position: absolute;
     z-index: 1;
@@ -31,14 +32,18 @@
   &_subtitle {
     width: 100%;
     text-align: center;
-    margin-top: 10px;
+    margin-top: 5%;
     color: $textColor;
   }
 
-  &_hr {
-    border-top: 1px solid;
-    max-width: 320px;
-  }
+  // &_line {
+  //   border-top: 0.5px solid $textColor;
+  //   max-width: ;
+
+  //   @include respond(laptopS) {
+  //     border-top: 1.5px;
+  //   }
+  // }
 
   &_crown-yellow {
     position: absolute;
@@ -52,10 +57,6 @@
     //   left: calc(50% - 126.3px);
     //   top: 15px;
     // }
-
-  //   // @include respond(mobileS) {
-  //   //   transform: translate(5%, 30%) scale(1);
-  //   // }
 
     @include respond(mobileM) {
       transform: scale(1.5);
@@ -99,6 +100,12 @@
       top: 14px;
     }
 
+    @include respond(laptopS) {
+      transform: scale(1.26);
+      left: calc(50% - 106px);
+      top: 26px;
+    }
+
     @include respond(laptopM) {
       transform: scale(1.4);
       left: calc(50% - 109px);
@@ -125,6 +132,7 @@
   }
 }
 
+// ----- MOBILE IMAGE ON -----
 .dsk {
   display: none;
 
@@ -133,6 +141,7 @@
   }
 }
 
+// ------ DESKTOP IMAGE ON -----
 .mbl {
   display: inline;
 
@@ -140,6 +149,9 @@
     display: none;
   }
 }
+
+
+/// ----- SVG ANIMATION CODE ----- 
 
 // @keyframes openYourHeart {from {r: 0} to {r: 100vw}}
 

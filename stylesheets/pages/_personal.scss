@@ -9,31 +9,34 @@
   align-items: center;
   /* justify-content: center; */
   min-height: 800px;
+
+  &_ink {
+    position: absolute;
+    z-index: -1;
+    width: auto;
+    height: 700px;
+  }
+
+  &_content {
+    z-index: 1;
+    max-width: 300px;
+    font-family: $textFont;
+    font-size: 1.2em;
+    font-weight: $bold-weight;
+    font-style: bold;
+    color: $textColor;
+  }
 }
 
-.personal-page_ink {
-  position: absolute;
-  z-index: -1;
-  width: auto;
-  height: 700px;
-}
 
-.personal-page_content {
-  z-index: 1;
-  max-width: 300px;
-  font-family: "Roboto", sans-serif;
-  font-size: 1.2em;
-  font-weight: 700;
-  font-style: bold;
-  color: var(--textColor);
-}
+.personal-page
 
 .personal-page_content p {
   padding: 5%;
 }
 
 .personal-page_content span {
-  color: var(--spanColor);
+  color: $spanColor;
 }
 
 .personal-page_img {
