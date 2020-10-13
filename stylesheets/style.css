@@ -201,31 +201,34 @@ section {
   position: relative;
   display: flex;
   flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
   width: auto;
   height: 100vh; }
-  .crown-page_content {
+  .crown-page_top {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+  .crown-page_frame {
+    position: absolute;
+    width: auto;
+    height: 65vh; }
+  .crown-page_crown {
+    max-width: 60%; }
+  .crown-page_bottom {
     position: relative;
     font-family: "Roboto", sans-serif;
     font-weight: 700;
-    text-align: center; }
-  .crown-page_content-top {
-    font-size: 0.9em;
-    color: var(--textColor);
-    padding: 0.5rem; }
-  .crown-page_content-top p {
-    margin: 2% 10% 0 10%; }
-  .crown-page_content-bottom {
-    font-size: 1.1em;
-    color: white; }
-  .crown-page_content-bottom-banner {
-    position: absolute;
-    z-index: -2;
-    width: auto;
-    height: 400px;
-    right: -50%;
-    top: 54%; }
-  .crown-page_content-bottom p {
-    margin: 40% 10% 5% 10%; }
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+  .crown-page_bottom p {
+    font-size: 0.7em;
+    color: #4e4e4e;
+    max-width: 200px; }
 
 /* BOXING PAGE */
 .boxing-page {
