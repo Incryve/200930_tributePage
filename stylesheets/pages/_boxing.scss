@@ -8,47 +8,70 @@
   /* align-content: flex-end; */
   width: auto;
   min-height: 100vh;
-}
+  
+  &_content-img {
+    position: relative;
+    z-index: -2;
+    /*left: -80px;*/
+    width: auto;
+    max-height: 100%;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
 
-.boxing-page img {
-  position: relative;
-  z-index: -2;
-  /*left: -80px;*/
-  width: auto;
-  max-height: 100%;
-  margin-top: 0;
-  margin-bottom: 0;
-}
+  &_content-blockquote {
+    position: absolute;
+    font-family: $textFont;
+    font-weight: $bold-weight;
+    font-style: bold;
+    text-align: right;
+    // margin: 30% 10%;
+    max-width: 200px;
+    right: 20%;
+    bottom: 10%;
+    left: 10%;
+    color: white;
+    filter: drop-shadow(2px 2px 2px #4E4E4E);
 
-.boxing-content blockquote {
-  position: absolute;
-  font-family: "Roboto", sans-serif;
-  font-style: bold;
-  text-align: right;
-  margin: 30% 10%;
-  right: 22px;
-  top: 65%;
-  color: white;
-  filter: drop-shadow(2px 2px 2px #4E4E4E);
-}
+    @include respond(tablet) {
+      left: 30%;
+    }
 
-.boxing-content blockquote p {
-  font-weight: 500;
-}
+    @include respond(tabletS) {
+      left: 30%;
+    }
 
-.boxing-content blockquote span {
-  font-style: italic;
-  font-weight: 300;
-  padding-top: 2%;
-}
+    @include respond(laptopL) {
+      left: 40%;
+    }
+  }
 
-@media only screen and (min-width: 768px) {
-  .boxing-content blockquote {
-    max-width: 329px;
+  &_content-blockquote p {
     font-weight: 500;
-    margin: 18% 28%;
   }
-  .boxing-content blockquote span {
+
+  &_content-blockquote span {
+    font-style: italic;
     font-weight: 300;
+    padding-top: 2%;
   }
 }
+
+
+
+
+
+
+
+
+
+// @media only screen and (min-width: 768px) {
+//   .boxing-content blockquote {
+//     max-width: 329px;
+//     font-weight: 500;
+//     margin: 18% 28%;
+//   }
+//   .boxing-content blockquote span {
+//     font-weight: 300;
+//   }
+// }
