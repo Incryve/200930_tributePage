@@ -329,7 +329,7 @@ section {
   .warhol-page_content-images-top, .warhol-page_content-images-bottom {
     display: flex;
     flex-direction: column; }
-    @media only screen and (min-width: 700px) {
+    @media only screen and (min-width: 540px) {
       .warhol-page_content-images-top, .warhol-page_content-images-bottom {
         flex-direction: row; } }
   .warhol-page_content-images img {
@@ -337,12 +337,9 @@ section {
     height: 100%;
     border: 5px solid white; }
   .warhol-page_content-text {
+    max-width: 520px;
     padding: 5% 5%;
     margin: 5% 5%; }
-    @media only screen and (min-width: 700px) {
-      .warhol-page_content-text {
-        padding: 2% 10%;
-        margin: 2% 10%; } }
   .warhol-page_content span {
     color: #848484; }
 
