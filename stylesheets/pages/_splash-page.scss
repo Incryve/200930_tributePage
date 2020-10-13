@@ -1,0 +1,55 @@
+/* SAMO PAGE - BOTTOM */
+
+
+.splash-page {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: auto;
+  height: 100vh;
+
+  &_text {
+    font-weight: $black-weight;
+    font-size: 1.1em;
+    max-width: 200px; 
+    color: white;
+    text-align: left;
+    margin-bottom: 80%;
+    margin-left: 34%;
+
+    // @include respond(mobileL) {
+    //   margin-bottom: 65%;
+    //   margin-left: 25%;
+    // }
+
+    // @include respond(tablet) {
+    //   font-size: 1.3em;
+    //   margin-right: 10%;
+    //   margin-top: 15%;
+    // }
+
+    // @include respond(laptopS) {
+    //   margin-bottom: 29%;
+    //   margin-left: 12%;
+    // }
+
+    // @include respond(laptopM) {
+    //   font-size: 1.3em;
+    //   max-width: 300px; 
+    //   margin-bottom: 34%;
+    // }
+
+  }
+
+  &_red {
+    position: absolute;
+    z-index: -2;
+    width: auto;
+    height: 100%;
+    /* right: -20%; */
+  }
+
+}
+
