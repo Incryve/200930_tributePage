@@ -230,6 +230,32 @@ section {
     color: #4e4e4e;
     max-width: 200px; }
 
+.yellow-banner {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: auto;
+  height: 100vh; }
+  .yellow-banner_text {
+    font-size: 1.1em;
+    color: white;
+    text-align: center;
+    font-weight: 700;
+    max-width: 70%; }
+    @media only screen and (min-width: 1152px) {
+      .yellow-banner_text {
+        font-size: 1.7em; } }
+    @media only screen and (min-width: 1280px) {
+      .yellow-banner_text {
+        font-size: 2em; } }
+  .yellow-banner_img {
+    position: absolute;
+    z-index: -2;
+    width: auto;
+    height: 100%; }
+
 /* BOXING PAGE */
 .boxing-page {
   position: relative;
