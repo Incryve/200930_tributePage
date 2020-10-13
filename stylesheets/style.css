@@ -342,8 +342,8 @@ section {
     margin: 5% 5%; }
     @media only screen and (min-width: 700px) {
       .warhol-page_content-text {
-        padding: 5% 10%;
-        margin: 5% 10%; } }
+        padding: 2% 10%;
+        margin: 2% 10%; } }
   .warhol-page_content span {
     color: #848484; }
 
@@ -355,42 +355,41 @@ section {
   align-items: center;
   width: auto;
   height: 100vh; }
-
-.samo-content {
-  position: relative;
-  font-family: "Roboto", sans-serif;
-  font-weight: 700;
-  font-style: bold;
-  text-align: left; }
-
-.samo-content_text {
-  padding: 3%;
-  margin: 2% 30% 1% 30%; }
-
-.samo-content span {
-  color: var(--spanColor); }
-
-.samo-content em {
-  color: var(--red); }
-
-.samo-content_gif {
-  display: flex;
-  flex-direction: row;
-  width: auto;
-  height: 100%; }
-
-@media (min-width: 768px) and (max-width: 1440px) {
-  .samo-content_gif {
+  .samo-page_content {
+    position: relative;
+    display: flex;
     flex-direction: column;
-    width: auto;
-    height: 500px;
-    justify-content: normal;
-    align-items: flex-start;
-    float: left; }
-  .samo-content_text {
-    padding: 5%;
-    margin: 1% 10% 1% 40%;
-    font-size: 1.5em; } }
+    justify-content: center;
+    align-items: center;
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-style: bold;
+    text-align: left; }
+    @media only screen and (min-width: 700px) {
+      .samo-page_content {
+        flex-direction: row; } }
+  .samo-page_content-gif {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: auto; }
+    @media only screen and (min-width: 700px) {
+      .samo-page_content-gif {
+        flex-direction: column; } }
+  .samo-page_content-text {
+    color: #4e4e4e;
+    padding: 2% 3%;
+    margin: 2% 5%;
+    max-width: 300px; }
+    @media only screen and (min-width: 700px) {
+      .samo-page_content-text {
+        max-width: 450px;
+        font-size: 1.6em;
+        padding: 2% 2%; } }
+  .samo-page_content span {
+    color: #848484; }
+  .samo-page_content em {
+    color: #d5371f; }
 
 /* SAMO PAGE - BOTTOM */
 .samo-page_bottom {
