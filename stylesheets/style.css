@@ -243,7 +243,9 @@ section {
     color: white;
     text-align: center;
     font-weight: 700;
-    max-width: 70%; }
+    max-width: 70%;
+    padding: 5%;
+    margin: 5%; }
     @media only screen and (min-width: 1152px) {
       .yellow-banner_text {
         font-size: 1.7em; } }
@@ -308,43 +310,42 @@ section {
   display: flex;
   flex-direction: column;
   align-items: center; }
-
-.warhol-content {
-  position: relative;
-  font-family: "Roboto", sans-serif;
-  font-weight: 700;
-  font-style: bold;
-  text-align: left; }
-
-.warhol-content_text {
-  padding: 5%;
-  margin: 5%; }
-
-.warhol-content span {
-  color: var(--spanColor); }
-
-.warhol-content_images {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  margin-top: -50%; }
-
-.warhol-content_images img {
-  width: auto;
-  height: 100%;
-  border: 5px solid white; }
-
-@media (min-width: 768px) and (min-width: 1440px) {
-  .warhol-content_images {
-    flex-direction: row;
-    margin-top: 0; }
-  .warhol-content {
-    font-size: 2em; }
-  .warhol-content_text {
-    padding: 0%;
-    margin: 3% 17% 3% 17%; } }
+  .warhol-page_content {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-style: bold;
+    text-align: left; }
+  .warhol-page_content-images {
+    position: relative;
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+  .warhol-page_content-images-top, .warhol-page_content-images-bottom {
+    display: flex;
+    flex-direction: column; }
+    @media only screen and (min-width: 700px) {
+      .warhol-page_content-images-top, .warhol-page_content-images-bottom {
+        flex-direction: row; } }
+  .warhol-page_content-images img {
+    width: auto;
+    height: 100%;
+    border: 5px solid white; }
+  .warhol-page_content-text {
+    padding: 5% 5%;
+    margin: 5% 5%; }
+    @media only screen and (min-width: 700px) {
+      .warhol-page_content-text {
+        padding: 5% 10%;
+        margin: 5% 10%; } }
+  .warhol-page_content span {
+    color: #848484; }
 
 /* SAMO PAGE */
 .samo-page {
