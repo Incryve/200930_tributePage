@@ -7,27 +7,34 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: auto;
-  height: 100vh;
+  width: 100vw;
+  height: auto;
 
   &_text {
     font-weight: $black-weight;
-    font-size: 1.1em;
-    max-width: 200px; 
+    font-size: 1.2em;
+    width: 180px; 
     color: white;
     text-align: left;
-    margin-bottom: 80%;
-    margin-left: 34%;
+    // padding-bottom: 85%;
+    // padding-left: 20%;
+    position: absolute;
+    margin: 0 auto;
+    z-index: 3;
+    right: 0;
+    left: 140px;
+    top: 210px;
+    
 
     // @include respond(mobileL) {
     //   margin-bottom: 65%;
     //   margin-left: 25%;
     // }
 
-    // @include respond(tablet) {
-    //   font-size: 1.3em;
-    //   margin-right: 10%;
-    //   margin-top: 15%;
+    // @include respond(tabletS) {
+    //   font-size: 1.2em;
+    //   padding-right: 10%;
+    //   padding-top: 15%;
     // }
 
     // @include respond(laptopS) {
@@ -44,7 +51,7 @@
   }
 
   &_red {
-    position: absolute;
+    position: relative;
     z-index: -2;
     width: auto;
     height: 100%;

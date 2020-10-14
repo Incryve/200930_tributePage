@@ -398,18 +398,22 @@ section {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: auto;
-  height: 100vh; }
+  width: 100vw;
+  height: auto; }
   .splash-page_text {
     font-weight: 900;
-    font-size: 1.1em;
-    max-width: 200px;
+    font-size: 1.2em;
+    width: 180px;
     color: white;
     text-align: left;
-    margin-bottom: 80%;
-    margin-left: 34%; }
-  .splash-page_red {
     position: absolute;
+    margin: 0 auto;
+    z-index: 3;
+    right: 0;
+    left: 140px;
+    top: 210px; }
+  .splash-page_red {
+    position: relative;
     z-index: -2;
     width: auto;
     height: 100%;
