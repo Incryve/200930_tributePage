@@ -12,7 +12,6 @@
   &_content-img {
     position: relative;
     z-index: -2;
-    /*left: -80px;*/
     width: auto;
     max-height: 100%;
     margin-top: 0;
@@ -25,7 +24,6 @@
     font-weight: $bold-weight;
     font-style: bold;
     text-align: right;
-    // margin: 30% 10%;
     max-width: 200px;
     right: 20%;
     bottom: 10%;
@@ -56,22 +54,3 @@
     padding-top: 2%;
   }
 }
-
-
-
-
-
-
-
-
-
-// @media only screen and (min-width: 768px) {
-//   .boxing-content blockquote {
-//     max-width: 329px;
-//     font-weight: 500;
-//     margin: 18% 28%;
-//   }
-//   .boxing-content blockquote span {
-//     font-weight: 300;
-//   }
-// }

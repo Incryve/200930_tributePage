@@ -132,7 +132,6 @@ section {
   width: auto;
   height: auto;
   align-items: center;
-  /* justify-content: center; */
   min-height: 800px; }
   .personal-page_ink {
     position: absolute;
@@ -272,7 +271,6 @@ section {
   .boxing-page_content-img {
     position: relative;
     z-index: -2;
-    /*left: -80px;*/
     width: auto;
     max-height: 100%;
     margin-top: 0;
@@ -418,8 +416,7 @@ section {
     position: relative;
     z-index: -2;
     width: auto;
-    height: 100%;
-    /* right: -20%; */ }
+    height: 100%; }
 
 /* DEMISE PAGE */
 .demise-page {
@@ -428,7 +425,6 @@ section {
   font-style: italic;
   text-align: left;
   color: white;
-  /* background-color: var(--textColor); */
   position: relative;
   display: flex;
   flex-direction: column;

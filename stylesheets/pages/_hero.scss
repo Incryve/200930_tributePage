@@ -36,27 +36,12 @@
     color: $textColor;
   }
 
-  // &_line {
-  //   border-top: 0.5px solid $textColor;
-  //   max-width: ;
-
-  //   @include respond(laptopS) {
-  //     border-top: 1.5px;
-  //   }
-  // }
-
   &_crown-yellow {
     position: absolute;
     z-index: 2;
     transform: scale(1.25);
     left: calc(50% - 132.2px);
     top: 25px;
-
-    // @include respond(mobileES) {
-    //   transform: scale(1.05);
-    //   left: calc(50% - 126.3px);
-    //   top: 15px;
-    // }
 
     @include respond(mobileM) {
       transform: scale(1.5);
@@ -131,6 +116,7 @@
     }
   }
 }
+
 
 // ----- MOBILE IMAGE ON -----
 .dsk {

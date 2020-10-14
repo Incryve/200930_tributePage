@@ -26,7 +26,6 @@
 
     @include respond(tabletS) {
       flex-direction: row;
-      // align-items: baseline;
     }
   }
 
@@ -61,31 +60,4 @@
   &_content em {
     color: $red;
   }
-
 }
-
-
-
-
-
-
-
-
-
-
-
-// @media (min-width: 768px) and (max-width: 1440px) {
-//   .samo-content_gif {
-//     flex-direction: column;
-//     width: auto;
-//     height: 500px;
-//     justify-content: normal;
-//     align-items: flex-start;
-//     float: left;
-//   }
-//   .samo-content_text {
-//     padding: 5%;
-//     margin: 1% 10% 1% 40%;
-//     font-size: 1.5em;
-//   }
-// }
