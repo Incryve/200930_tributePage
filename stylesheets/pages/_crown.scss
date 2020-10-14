@@ -19,29 +19,36 @@
   
   &_frame {
     position: absolute;
-    width: auto;
-    height: 65vh;
+    width: 80vh;
+    height: auto;
   }
   
   &_crown {
-    max-width: 60%;
+    width: calc(450px - 110%);
+
+    // @include respond(tabletS) {
+    //   width: calc(450px - 135%)
+    // }
   }
 
   &_bottom {
     position: relative;
     font-family: $textFont;
     font-weight: $bold-weight;
-    text-align: center;
+    text-align: justify;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    // background-image: url(/public/exhibition-label-removebg-preview.png);
+    // background-repeat: no-repeat;
+    // height: 100%;
   }
 
   &_bottom p {
     font-size: 0.7em;
     color: $textColor;
-    max-width: 200px;
+    width: 40vw;
   }
 
 }

@@ -212,15 +212,15 @@ section {
     align-items: center; }
   .crown-page_frame {
     position: absolute;
-    width: auto;
-    height: 65vh; }
+    width: 80vh;
+    height: auto; }
   .crown-page_crown {
-    max-width: 60%; }
+    width: calc(450px - 110%); }
   .crown-page_bottom {
     position: relative;
     font-family: "Roboto", sans-serif;
     font-weight: 700;
-    text-align: center;
+    text-align: justify;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -228,7 +228,7 @@ section {
   .crown-page_bottom p {
     font-size: 0.7em;
     color: #4e4e4e;
-    max-width: 200px; }
+    width: 40vw; }
 
 .yellow-banner {
   position: relative;
