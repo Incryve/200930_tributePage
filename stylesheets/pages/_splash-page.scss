@@ -1,0 +1,33 @@
+/* SAMO PAGE - BOTTOM */
+
+
+.splash-page {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: auto;
+
+  &_text {
+    font-weight: $black-weight;
+    font-size: 1.2em;
+    width: 180px; 
+    color: white;
+    text-align: left;
+    position: absolute;
+    margin: 0 auto;
+    z-index: 3;
+    right: 0;
+    left: 140px;
+    top: 210px;
+  }
+
+  &_red {
+    position: relative;
+    z-index: -2;
+    width: auto;
+    height: 100%;
+  }
+}

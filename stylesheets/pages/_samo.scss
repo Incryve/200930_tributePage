@@ -1,0 +1,63 @@
+/* SAMO PAGE */
+
+.samo-page {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: auto;
+  height: 100vh;
+
+  @include respond(tabletS) {
+    width:100%;
+    height: 600px;
+  }
+
+  &_content {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: $textFont;
+    font-weight: $bold-weight;
+    font-style: bold;
+    text-align: left;
+
+    @include respond(tabletS) {
+      flex-direction: row;
+    }
+  }
+
+  &_content-gif {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: auto;
+
+    @include respond(tabletS) {
+      flex-direction: column;
+    }
+  }
+
+  &_content-text {
+    color: $textColor;
+    padding: 2% 3%;
+    margin: 2% 5%;
+    max-width: 300px;
+
+    @include respond(tabletS) {
+      max-width: 450px;
+      font-size: 1.3em;
+      padding: 2% 2%;
+    }
+  }
+
+  &_content span {
+    color: $spanColor;
+  }
+
+  &_content em {
+    color: $red;
+  }
+}

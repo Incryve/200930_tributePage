@@ -1,0 +1,37 @@
+// CROWN BANNER
+
+.yellow-banner {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: auto;
+  height: 100vh;
+
+  &_text {
+    font-size: 1.1em;
+    color: white;
+    text-align: center;
+    font-weight: $bold-weight;
+    max-width: 70%;
+    padding: 5%;
+    margin: 5%;
+
+    @include respond(laptopS) {
+      font-size: 1.7em;
+    }
+
+    @include respond(laptopM) {
+      font-size: 2em;
+    }
+  }
+
+  &_img {
+    position: absolute;
+    z-index: -2;
+    width: auto;
+    height: 100%;
+  }
+}
+

@@ -1,0 +1,151 @@
+// HERO PAGE
+
+.hero-page {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  text-transform: capitalize;
+  font-style: italic;
+  font-weight: 100;
+  font-size: 0.8em;
+  width: 100vw;
+
+  &_content {
+    display: flex;
+    justify-content: center;
+    position: relative;
+  }
+
+  // ----- SVG BASQUIAT WHITE
+  &_solid-white {
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    height: auto;
+  }
+
+  &_img {
+    width: 99%;
+    height: auto;
+  }
+
+  &_subtitle {
+    width: 100%;
+    text-align: center;
+    margin-top: 5%;
+    color: $textColor;
+  }
+
+  &_crown-yellow {
+    position: absolute;
+    z-index: 2;
+    transform: scale(1.25);
+    left: calc(50% - 132.2px);
+    top: 25px;
+
+    @include respond(mobileM) {
+      transform: scale(1.5);
+      left: calc(50% - 137.7px);
+      top: 38px;
+    }
+
+    @include respond(mobileL) {
+      transform: scale(1.68);
+      left: calc(50% - 145px);
+      top: 50px;
+    }
+
+    @include respond(tabletS) {
+      transform: scale(0.6);
+      left: calc(50% - 95.2px);
+      top: -19px;
+    }
+
+    @include respond(mobileRotated) {
+      transform: scale(0.73);
+      left: calc(50% - 95.2px);
+      top: -11.5px;
+    }
+
+    @include respond(tablet) {
+      transform: scale(0.83);
+      left: calc(50% - 99px);
+      top: -3.6px;
+    }
+
+    @include respond(tabletM) {
+      transform: scale(0.9);
+      left: calc(50% - 99px);
+      top: 0px;
+    }
+
+    @include respond(tabletL) {
+      transform: scale(1.14);
+      left: calc(50% - 103.1px);
+      top: 14px;
+    }
+
+    @include respond(laptopS) {
+      transform: scale(1.26);
+      left: calc(50% - 106px);
+      top: 26px;
+    }
+
+    @include respond(laptopM) {
+      transform: scale(1.4);
+      left: calc(50% - 109px);
+      top: 34px;
+    }
+
+    @include respond(tabletRotated) {
+      transform: scale(1.5);
+      left: calc(50% - 111px);
+      top: 40px;
+    }
+
+    @include respond(laptopL) {
+      transform: scale(1.55);
+      left: calc(50% - 110px);
+      top: 47px;
+    }
+
+    @include respond(desktop) {
+      transform: scale(2.8);
+      left: calc(50% - 133px);
+      top: 127px;
+    }
+  }
+}
+
+
+// ----- MOBILE IMAGE ON -----
+.dsk {
+  display: none;
+
+  @include respond(tabletS) {
+    display: inline;
+  }
+}
+
+// ------ DESKTOP IMAGE ON -----
+.mbl {
+  display: inline;
+
+  @include respond(tabletS) {
+    display: none;
+  }
+}
+
+
+/// ----- SVG ANIMATION CODE ----- 
+
+// @keyframes openYourHeart {from {r: 0} to {r: 100vw}}
+
+// #myClip circle {
+//   animation: openYourHeart 15s infinite;
+// }
+
+// #heart {
+//   clip-path: url(#myClip);
+//   width: 10vw;
+// }

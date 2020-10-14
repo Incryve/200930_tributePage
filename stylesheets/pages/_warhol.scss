@@ -1,0 +1,56 @@
+/* WARHOL PAGE */
+
+.warhol-page {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  &_content {
+    position: relative;    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-family: $textFont;
+    font-weight: $bold-weight;
+    font-style: bold;
+    text-align: left;
+  }
+
+  &_content-images {
+    position: relative;
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &_content-images-top,
+  &_content-images-bottom {
+    display: flex;
+    flex-direction: column;
+
+    @include respond(tabletS) {
+      flex-direction: row;
+    }
+  }
+
+  &_content-images img {
+    width: auto;
+    height: 100%;
+    border: 5px solid white;
+  }
+
+  &_content-text {
+    max-width: 520px;
+    padding: 5% 5%;
+    margin: 5% 5%;
+  }
+
+  &_content span {
+    color: $spanColor;
+  }
+
+}

@@ -1,0 +1,41 @@
+// PERSONAL PAGE
+
+.personal-page {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  width: auto;
+  height: auto;
+  align-items: center;
+  min-height: 800px;
+
+  &_ink {
+    position: absolute;
+    z-index: -1;
+    width: auto;
+    height: 700px;
+  }
+
+  &_content {
+    z-index: 1;
+    max-width: 300px;
+    font-family: $textFont;
+    font-size: 1.2em;
+    font-weight: $bold-weight;
+    font-style: bold;
+    color: $textColor;
+  }
+
+  &_content p {
+    padding: 5%;
+  }
+
+  &_content span {
+    color: $spanColor;
+  }
+
+  &_img {
+    max-width: 300px;
+  }
+
+}

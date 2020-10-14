@@ -1,0 +1,54 @@
+// CROWN PAGE 
+
+
+.crown-page {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  width: auto;
+  height: 500px;
+
+  &_top {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  &_frame {
+    position: absolute;
+    width: 80vw;
+    height: auto;
+    min-width: 385px;
+    max-width: 550px;
+  }
+  
+  &_crown {
+    width: calc(450px - 110%);
+
+    // @include respond(tabletS) {
+    //   width: calc(450px - 135%)
+    // }
+  }
+
+  &_bottom {
+    position: relative;
+    font-family: $textFont;
+    font-weight: $bold-weight;
+    text-align: justify;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &_bottom p {
+    font-size: 0.7em;
+    color: $textColor;
+    width: 125px;
+  }
+
+}
+

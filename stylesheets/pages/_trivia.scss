@@ -1,0 +1,61 @@
+/* TRIVIA PAGE */
+
+.trivia-page {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: auto;
+  height: 700px;
+
+  &_ink {
+    position: absolute;
+    z-index: -1;
+    filter: opacity(0.1);
+    width: auto;
+    height: 100vh;
+  }
+
+  &_content {
+    width: 320px;
+    height: auto;
+    font-family: $textFont;
+    font-size: 0.8em;
+    font-weight: $bold-weight;
+    color: $textColor;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+  }
+
+  &_content span {
+    color: $spanColor;
+  }
+
+  &_content p {
+    padding: 0.8rem;
+  }
+
+  &_content-top {
+    display: flex;
+    flex-direction: row;
+  }
+
+  &_content-bottom {
+    display: flex;
+    flex-direction: row;
+    text-align: right;
+  }
+
+
+}
+
+.left {
+  margin-left: -15%;
+}
+
+.right {
+  margin-right: -15%;
+}
+

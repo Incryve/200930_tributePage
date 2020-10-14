@@ -1,0 +1,43 @@
+@charset "UTF-8";
+
+
+// 1. Abstracts 
+
+// 2. Vendors
+
+
+// 3. Base Stuff
+@import
+  'base/fonts',
+  'base/base',
+  'base/mixins';
+
+
+// 4. Layout-related
+@import
+  'layout/footer';
+
+
+// 5. Components
+
+
+// 6. Page-specific styles
+@import 
+  'pages/hero',
+  'pages/personal',
+  'pages/trivia',
+  'pages/crown',
+  'pages/yellow-banner',
+  'pages/boxing',
+  'pages/warhol',
+  'pages/samo',
+  'pages/splash-page',
+  'pages/demise',
+  'pages/phrase';
+
+// 7. Themes
+
+
+
+
+
