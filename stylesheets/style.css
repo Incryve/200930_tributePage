@@ -462,24 +462,20 @@ section {
   height: 100vh;
   text-align: right;
   color: white; }
-
-.demise-phrase_img {
-  position: absolute;
-  z-index: -1;
-  width: auto;
-  height: 100%; }
-
-.demise-phrase h3 {
-  font-size: 1.6em;
-  font-weight: 900;
-  color: white;
-  position: relative; }
-
-.demise-phrase span {
-  font-size: 1em;
-  font-weight: 500;
-  font-style: italic; }
-
-.demise-phrase blockquote {
-  padding: 5%;
-  margin-right: 5%; }
+  .demise-phrase_img {
+    position: absolute;
+    z-index: -1;
+    width: auto;
+    height: 100%; }
+  .demise-phrase_blockquote {
+    padding: 5%;
+    margin-right: 5%; }
+  .demise-phrase_blockquote h3 {
+    font-size: 1.6em;
+    font-weight: 900;
+    color: white;
+    position: relative; }
+  .demise-phrase_blockquote span {
+    font-size: 1em;
+    font-weight: 500;
+    font-style: italic; }
